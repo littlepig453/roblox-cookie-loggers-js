@@ -1,3 +1,2 @@
 # roblox-cookie-loggers-js
-some js cookie logger examples
-##FOR EDUCATION USES ONLY
+my attempt at roblox cookie loggers
